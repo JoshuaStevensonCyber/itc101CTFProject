@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Text Bubble</title>
+  <style>
+    body {
+      font-family: Arial, 'Times New Roman', Times, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .text-bubble {
+      position: relative;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      max-width: 300px;
+      font-size: 16px;
+    }
+
+    .text-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #4CAF50 transparent transparent transparent;
+    }
+  </style>
+</head>
+<body>
+<!--Alddhzco-->
+  <div class="container">
+    <img src="./Desktop/Unknownsteg.jpeg" alt="Image" class="image">
+    <div class="text-bubble">PLEASE, CAN YOU HELP ME? I LOST MY CTF!</div>
+  </div>
+
+</body>
+</html>
